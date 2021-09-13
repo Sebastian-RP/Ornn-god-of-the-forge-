@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+    font-family: 'arbutus-regular';
+    src: url("../fonts/Arbutus-Regular.ttf");
+}
+
+header{
+    background-color: 	rgba(19, 19, 19, 0.85);
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+}
+
+header .logo{
+    grid-column: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .logo img{
+    width: 7.5vw;
+}
+
+header nav{
+    grid-column: 2/8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul{
+   list-style: none;
+   display: flex;
+}
+
+header ul a{
+    text-decoration: none;
+    color:  white;
+    font-size: 1.4rem;
+    margin-right: 2.1rem;
+    font-family: arbutus-regular;
+}
+
+header ul a:hover{
+    color: darkred;
+    transition: color 0.4s;
+}
+
+header .btn-ticket{
+    grid-column: 8/9;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header .btn-ticket a{
+    color: #fff;
+    text-decoration: none;
+    font-family: sans-serif, serif;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    background: #ff2b00;
+    padding: 0.7rem 1rem;
+    border: none;
+    border-radius: 5%;
+    box-shadow: 0 0 10px #FF512F,0 0 0px #FF512F, 0 0 0px #FF512F;
+}
+
+div.btn-ticket a:hover {
+    background: #FF512F;
+    box-shadow: 0 0 10px #FF512F,0 0 40px #FF512F, 0 0 80px #FF512F;
+    transition-delay: 0.15s;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.main .banner{
+    background-image: url("../imagenes/orn-1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    justify-content: center;
+}
+
+.main .banner .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: absolute;
+    margin-top: 70vh;
+    color: #fff;
+    z-index: 200;
+}
+
+.main .banner .container .info-ornn{
+    grid-column: 1/2;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.main .banner .container .info-ornn p{
+    font-size: 2rem;
+}
+
+.main .banner .container .info-ornn h1{
+    font-size: 3.8rem;
+}
+
+.main .banner .container .info-ornn a{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.4rem 0.6rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ff512f;
+    border-radius: 5%;
+    transition: box-shadow 0.3s;
+}
+
+.main .banner .container .info-ornn a:hover{
+    background-color: #ff512f;
+    box-shadow: 0 0 10px #FF512F,0 0 40px #FF512F, 0 0 80px #FF512F;
+}
+
+.main .banner .container .info-about{
+    grid-column: 2/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main .banner .container .info-about h2{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+.main .banner .container .info-about p{
+    text-align: center;
+    width: 90%;
+}
+
+
+.main .shadow-banner{
+ position: absolute;
+ width: 100%;
+ height: 50vh;
+ bottom: 0;
+    
+}
+
+.main .shadow-banner .shadow{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #000 10%,  transparent);
+    z-index: 20;
+}
